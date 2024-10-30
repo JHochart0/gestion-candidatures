@@ -7,6 +7,10 @@ function App() {
                 <div className="content">
                     <Routes>
                         <Route path="/" element={<Home/>}></Route>
+                        <Route path="/signup" element={<Home/>}></Route>
+                        <Route path="/login" element={<Home/>}></Route>
+                        <Route path="/create" element={<Home/>}></Route>
+                        <Route path="*" element={<NotFound404 />}></Route>
                     </Routes>
                 </div>
             </div>
