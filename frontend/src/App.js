@@ -1,5 +1,6 @@
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Home from './Components/Pages/Home';
+import NotFound404 from './Components/Pages/NotFound404';
 function App() {
     return(
         <Router>
@@ -7,9 +8,6 @@ function App() {
                 <div className="content">
                     <Routes>
                         <Route path="/" element={<Home/>}></Route>
-                        <Route path="/signup" element={<Home/>}></Route>
-                        <Route path="/login" element={<Home/>}></Route>
-                        <Route path="/create" element={<Home/>}></Route>
                         <Route path="*" element={<NotFound404 />}></Route>
                     </Routes>
                 </div>

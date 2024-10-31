@@ -2,12 +2,13 @@ import ApplicationList from "../UI/ApplicationList";
 import useFetch from "../Custom_hooks/useFetch";
 
 const Home = () => {
-    const {data: applications, isLoading, Error} = useFetch("");
+    const {data: applications, isLoading, error} = useFetch("http://localhost:8000/applications");
 
-
-    return (
+   return (
         <div className="home">
-            <ApplicationList applications={applications} title="Vos candidatures" />
+            { error && <div>{ error }</div> }
+            { isLoading && <div>Chargement...</div> }
+            { applications && <ApplicationList applications={applications} title="Vos candidatures" /> }
         </div>
     );
 }

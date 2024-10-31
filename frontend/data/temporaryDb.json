@@ -1,0 +1,29 @@
+{
+    "applications":[
+      {
+        "companyName":"Google",
+        "applicationDate":"29/10/2024",
+        "answerState":"En attente de réponse",
+        "id":1
+      },
+      {
+        "companyName":"Amazon",
+        "applicationDate":"28/10/2024",
+        "answerState":"Refusée",
+        "id":2
+      },
+      {
+        "companyName":"Capgemini",
+        "applicationDate":"15/09/2024",
+        "answerState":"Entretien planifié",
+        "id":3
+      },
+      {
+        "companyName":"Worldline",
+        "applicationDate":"15/10/2024",
+        "answerState":"Pas encore postulé",
+        "id":4
+      }
+      
+    ]
+}
